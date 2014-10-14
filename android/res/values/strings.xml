@@ -3,6 +3,13 @@
 
     <string name="app_name">WeatherCloset</string>
     <string name="hello_world">Hello world!</string>
+    
+    <string name="timelineTab">타임라인</string>
+    <string name="statisticsTab">통계</string>
+    
+    <string name="newPostBtn">New</string>
+    <string name="myPageBtn">MyPage</string>
     <string name="homeBtn">Home</string>
-
+	<string name="noticeBtn">Notice</string>
+	<string name="settingBtn">Settings</string>
 </resources>
