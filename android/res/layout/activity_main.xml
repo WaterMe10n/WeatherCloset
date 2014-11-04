@@ -17,7 +17,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0px"
-        android:layout_weight="1"
+        android:layout_weight="10"
         android:orientation="horizontal" >
 
         <Spinner
@@ -44,10 +44,38 @@
             android:textSize="25sp" />
     </LinearLayout>
 
-    <LinearLayout
+    <LinearLayout 
         android:layout_width="fill_parent"
         android:layout_height="0px"
-        android:layout_weight="6"
+        android:layout_weight="8"
+        android:layout_marginTop="15dp">
+        
+        <Button
+            android:id="@+id/timelineFragment"
+            android:layout_width="0px"
+            android:layout_height ="fill_parent"
+            android:layout_weight="1"
+            android:background="#909090"
+            android:text="TimeLine"
+            android:textSize="25sp"
+            android:gravity="center" />
+        
+        <Button
+            android:id="@+id/statisticsFragment"
+            android:layout_width="0px"
+            android:layout_height ="fill_parent"
+            android:layout_weight="1"
+            android:background="#909090"
+            android:text="Statistics"
+            android:textSize="25sp"
+            android:gravity="center" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="80"
         android:orientation="vertical" >
 <!--  
         <TabHost
@@ -76,7 +104,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0px"
-        android:layout_weight="1"
+        android:layout_weight="10"
         android:background="#909090"
         android:orientation="horizontal" >
 
