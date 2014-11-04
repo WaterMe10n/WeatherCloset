@@ -3,10 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+	
+    
+   <Button
+        android:id="@+id/gologBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"      
+     
+        android:layout_marginTop="37dp" 
+        android:text="go login" />  
+ 
 
 </RelativeLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+ 
+  	<RadioGroup
+     	android:id="@+id/radioGrouphotcold"
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:orientation="vertical"
+        >
+        
+        <RadioButton 
+            android:id="@+id/radiohot"
+            android:text="HOT"
+        />
+        
+        <RadioButton
+            android:id="@+id/radiomiddle"
+            android:text="MIDDLE"
+        />
+
+        <RadioButton
+            android:id="@+id/radiocold"
+            android:text="COLD" />
+        
+        </RadioGroup>
+   
+  	
+  	<EditText
+  	    android:id="@+id/newposttext"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_below="@+id/radioGrouphotcold"
+  	     />
+  		
+
+  	
+  	
+  	
+  	
+</RelativeLayout>

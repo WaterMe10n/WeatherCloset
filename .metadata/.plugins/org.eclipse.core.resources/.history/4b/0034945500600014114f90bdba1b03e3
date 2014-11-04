@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <EditText
+	    android:id="@+id/newid" 
+	 	android:layout_width="210dp"
+	 	android:layout_height="wrap_content"
+	 	android:layout_centerHorizontal="true"
+	 	android:layout_marginTop="50dp"
+	 	android:hint="@string/ID" 
+	    />
+    
+    <EditText
+	    android:id="@+id/newnickname" 
+	 	android:layout_width="210dp"
+	 	android:layout_height="wrap_content"
+	 	android:layout_centerHorizontal="true"
+	 	android:layout_alignLeft="@+id/newid"
+	 	android:layout_below="@+id/newid"
+	 	android:layout_marginTop="10dp"
+	 	android:hint="@string/NICKNAME" 
+	    />
+    
+    <EditText
+	    android:id="@+id/newpw" 
+	 	android:layout_width="210dp"
+	 	android:layout_height="wrap_content"
+	 	android:layout_alignLeft="@+id/newnickname"
+	 	android:layout_below="@+id/newnickname"
+	 	
+	 	android:layout_marginTop="10dp"
+	 	android:hint="@string/PASSWORD" 
+	    />
+     
+     <EditText
+	    android:id="@+id/confirmpw" 
+	 	android:layout_width="210dp"
+	 	android:layout_height="wrap_content"
+	 	android:layout_alignLeft="@+id/newpw"
+	 	android:layout_below="@+id/newpw"
+	 	
+	 	android:layout_marginTop="10dp"
+	 	android:hint="@string/PASSWORD" 
+	    />
+     
+    
+          <EditText
+	    android:id="@+id/newage" 
+	 	android:layout_width="210dp"
+	 	android:layout_height="wrap_content"
+	 	android:layout_alignLeft="@+id/confirmpw"
+	 	android:layout_below="@+id/confirmpw"
+	 	
+	 	android:layout_marginTop="10dp"
+	 	android:hint="@string/AGE" 
+	    />
+	    
+    <RadioGroup
+     	android:id="@+id/radioGroupGender"
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:layout_alignLeft="@+id/newage"
+     	android:layout_below="@id/newage"
+     	android:orientation="horizontal"
+        >
+        
+        <RadioButton 
+            android:id="@+id/radioMan"
+            android:text="@string/MAN"
+        />
+        
+        <RadioButton
+            android:id="@+id/radioWoman"
+            android:text="@string/WOMAN"
+        />
+        </RadioGroup>
+
+    
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/radioGroupGender"
+        android:text="@string/getback" />
+    
+		
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="area">
+        <item>seoul</item>
+        <item>kyongki</item>
+        <item>chugbook</item>
+        <item>kyongsang</item>
+        <item>jeonra</item>
+        <item>busan</item>           
+    </string-array> 
+    </resources>
+    
+

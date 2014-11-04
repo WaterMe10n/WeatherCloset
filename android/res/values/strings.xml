@@ -2,6 +2,9 @@
 <resources>
 
     <string name="app_name">WeatherCloset</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Signup</string>
+    <string name="area_prompt">arealist</string>
+    <string name="login">login</string>
+    <string name="WELCOM">WELCOM</string>
 
 </resources>
