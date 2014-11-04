@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SpinnerActivity" >
+        </activity>
+        <activity android:name=".TimeLineTab" >
+        </activity>
+        <activity android:name=".StatisticsTab" >
+        </activity>
+        <activity android:name=".MyPage" >
+        </activity>
     </application>
 
 </manifest>

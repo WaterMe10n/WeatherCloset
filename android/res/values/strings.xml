@@ -12,4 +12,6 @@
     <string name="homeBtn">Home</string>
 	<string name="noticeBtn">Notice</string>
 	<string name="settingBtn">Settings</string>
+	<string name="a">a</string>
+	<string name="nickname">weather</string>
 </resources>

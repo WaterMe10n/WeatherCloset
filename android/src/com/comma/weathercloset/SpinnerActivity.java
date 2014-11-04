@@ -1,4 +1,4 @@
-package com.comma.weathercloset;
+/*package com.comma.weathercloset;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -38,4 +38,4 @@ public class SpinnerActivity extends Activity implements AdapterView.OnItemSelec
 		
 	}
 
-}
+}*/

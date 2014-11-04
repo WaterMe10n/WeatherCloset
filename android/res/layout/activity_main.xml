@@ -4,103 +4,131 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+<!--  
+    <LinearLayout
+        android:id="@+id/sample"
+        android:layout_width="fill_parent"
+        android:layout_height="0px" 
+        android:layout_weight="7"
+        android:orientation="horizontal" 
+        /> 
+        -->
+        
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0px"
         android:layout_weight="1"
         android:orientation="horizontal" >
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-        <TextView 
-           
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="흐림" />"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" />
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/cloudy"
+            android:contentDescription="@string/a"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="℃18"
+            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="15"
+        android:layout_height="0px"
+        android:layout_weight="6"
         android:orientation="vertical" >
-
+<!--  
         <TabHost
-            android:id="@+id/tabhost"
+            android:id="@android:id/tabhost"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" >
 
-            <FrameLayout
-                android:id="@android:id/tabcontent"
+            <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                >
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
 
-                <LinearLayout
-                    android:id="@+id/timelineTab"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical" />
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
 
-                <LinearLayout
-                    android:id="@+id/statisticsTab"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical" />
-            </FrameLayout>
-
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:tabStripEnabled="true" />
-        </TabHost>
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </TabHost>    -->
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
         android:layout_weight="1"
+        android:background="#909090"
         android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/newPostBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/newPostBtn" />
-
-        <Button
+        <ImageView
             android:id="@+id/myPageBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="@string/myPageBtn" />
+            android:background="@drawable/mypagebtn"
+            android:contentDescription="@string/a"
+            android:scaleType="centerCrop" />
 
-        <Button
+        <ImageView
+            android:id="@+id/newPostBtn"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/newpostbtn"
+            android:contentDescription="@string/a"
+            android:scaleType="centerCrop" />
+
+        <ImageView
             android:id="@+id/homeBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="0px"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="@string/homeBtn" />
+            android:background="@drawable/homebtn"
+            android:contentDescription="@string/a"
+            android:scaleType="centerCrop" />
 
-        <Button
+        <ImageView
             android:id="@+id/noticeBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="0px"
             android:layout_height="wrap_content"
+            android:layout_margin="11dp"
             android:layout_weight="1"
-            android:text="@string/noticeBtn" />
+            android:background="@drawable/noticebtn"
+            android:contentDescription="@string/a"
+            android:scaleType="centerCrop" />
 
-        <Button
+        <ImageView
             android:id="@+id/settingBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="0px"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="@string/settingBtn" />
+            android:background="@drawable/settingbtn"
+            android:contentDescription="@string/a"
+            android:scaleType="centerCrop" />
     </LinearLayout>
+
 </LinearLayout>
