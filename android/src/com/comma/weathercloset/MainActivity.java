@@ -1,9 +1,11 @@
 package com.comma.weathercloset;
 
-import android.app.*;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -15,6 +17,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends FragmentActivity implements AdapterView.OnItemSelectedListener {
 	
+	final String TAG = "MainActivity";
 	int mCurrentFragmentIndex;
 	public final static int FRAGMENT_ONE = 0;
 	public final static int FRAGMENT_TWO = 1;
@@ -51,7 +54,7 @@ public class MainActivity extends FragmentActivity implements AdapterView.OnItem
 		newFragment = getFragment(reqNewFragmentIndex);
 
 		// replace fragment
-		final FragmentTransaction transaction = getSupportFragmentManager()
+		final FragmentTransaction transaction = getFragmentManager()
 				.beginTransaction();
 
 		transaction.replace(R.id.main_fragment, newFragment);
@@ -66,10 +69,10 @@ public class MainActivity extends FragmentActivity implements AdapterView.OnItem
 
 		switch (idx) {
 		case FRAGMENT_ONE:
-			newFragment = new OneFragment();
+			newFragment = new TimeLineFragment();
 			break;
 		case FRAGMENT_TWO:
-			newFragment = new TwoFragment();
+			newFragment = new StatisticsFragment();
 			break;
 			
 		default:
