@@ -15,11 +15,20 @@
         android:hint="NICKNAME" />
 
     <EditText
+        android:id="@+id/oripw"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="CURRENT PASSWORD"
+        android:inputType="textPassword" />
+
+    <EditText
         android:id="@+id/newpw"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="PASSWORD"
+        android:hint="NEW PASSWORD"
         android:inputType="textPassword" />
 
     <EditText
@@ -27,7 +36,7 @@
         android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="PASSWORD"
+        android:hint="RETYPE PASSWORD"
         android:inputType="textPassword" />
 
     <Button

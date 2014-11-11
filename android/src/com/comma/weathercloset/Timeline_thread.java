@@ -5,9 +5,9 @@ import org.xmlpull.v1.XmlPullParser;
 import android.content.Context;
 import android.util.Log;
 
-public class Signup_thread extends Communication_Thread{
+public class Timeline_thread extends Communication_Thread{
 
-	public Signup_thread(Context context, int menu, 
+	public Timeline_thread(Context context, int menu, 
 			String signup, String signup2, String signup3, String signup4,String signup5,String signup6) {
 		super(context, menu);
 		Log.i("MyTag","111 >> ");

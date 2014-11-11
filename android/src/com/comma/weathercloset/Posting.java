@@ -181,7 +181,7 @@ public class Posting extends Activity implements OnClickListener{
 				Log.i("MyTag","000 >> ");
 				// �씠踰ㅽ듃 �썑 �넻�떊�뒪�젅�뱶
 				
-				posting_thread pThread = new posting_thread(Posting.this, 10, sExplain, sStatus, sCity, sOuter, sTop,sBottoms, sOnepiece, sAcc);
+				Posting_thread pThread = new Posting_thread(Posting.this, 10, sExplain, sStatus, sCity, sOuter, sTop,sBottoms, sOnepiece, sAcc);
 				pThread.start();
 				
 				break;

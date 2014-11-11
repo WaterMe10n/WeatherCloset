@@ -64,7 +64,7 @@ public class Signup extends Activity  implements OnClickListener{
 				Log.i("MyTag","000 >> ");
 				// �씠踰ㅽ듃 �썑 �넻�떊�뒪�젅�뱶
 				
-				signup_thread sThread = new signup_thread(Signup.this, 11, sID, sNNAME, sPW, sCPW, sAGE, sSex);
+				Signup_thread sThread = new Signup_thread(Signup.this, 11, sID, sNNAME, sPW, sCPW, sAGE, sSex);
 				sThread.start();
 				
 				break;

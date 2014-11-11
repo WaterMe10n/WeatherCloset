@@ -8,11 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CustomList extends ArrayAdapter<String>{
+public class Timeline_List extends ArrayAdapter<String>{
 	private final Activity context;
 	private final String[] web;
 	private final Integer[] imageId;
-	public CustomList(Activity context,
+	public Timeline_List(Activity context,
 	String[] web, Integer[] imageId) {
 		super(context, R.layout.list_single, web);
 		this.context = context;

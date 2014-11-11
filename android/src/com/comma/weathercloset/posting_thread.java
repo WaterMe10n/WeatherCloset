@@ -5,9 +5,9 @@ import org.xmlpull.v1.XmlPullParser;
 import android.content.Context;
 import android.util.Log;
 
-public class posting_thread extends Communication_Thread{
+public class Posting_thread extends Communication_Thread{
 
-	public posting_thread(Context context, int menu, 
+	public Posting_thread(Context context, int menu, 
 			String memo, String memo2, String memo3, String memo4,String memo5,String memo6,String memo7,String memo8) {
 		super(context, menu);
 		Log.i("MyTag","111 >> ");

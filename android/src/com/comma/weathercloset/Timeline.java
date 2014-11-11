@@ -67,7 +67,7 @@ public class Timeline extends Activity {
 
         tabHost.setCurrentTab(0);       
  
-        CustomList adapter = new CustomList(Timeline.this, web, imageId);
+        Timeline_List adapter = new Timeline_List(Timeline.this, web, imageId);
         list=(ListView)findViewById(R.id.tab1);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -130,5 +130,6 @@ public class Timeline extends Activity {
 			}
 		}  
 	}
+	
 
 }
