@@ -3,6 +3,7 @@
 
     <string name="app_name">WeatherCloset</string>
     <string name="hello_world">Hello world!</string>
+<<<<<<< HEAD
     <string name="action_settings">Settings</string>
     <string name="city">city</string>
     <string name="outer">아우터</string>
@@ -28,4 +29,17 @@
     <string name="nickname">weather</string>
    
 	    
+=======
+    
+    <string name="timelineTab">타임라인</string>
+    <string name="statisticsTab">통계</string>
+    
+    <string name="newPostBtn">New</string>
+    <string name="myPageBtn">MyPage</string>
+    <string name="homeBtn">Home</string>
+	<string name="noticeBtn">Notice</string>
+	<string name="settingBtn">Settings</string>
+	<string name="a">a</string>
+	<string name="nickname">weather</string>
+>>>>>>> 희찬
 </resources>
