@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/newid"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="ID" />
+
+    <EditText
+        android:id="@+id/newnickname"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="NICKNAME" />
+
+    <EditText
+        android:id="@+id/newpw"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirmpw"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/newage"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="AGE" />
+
+    <Spinner
+        android:id="@+id/s_city"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:prompt="@string/city" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioMan"
+            android:text="MAN" />
+
+        <RadioButton
+            android:id="@+id/radioWoman"
+            android:text="WOMAN" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPLETE" />
+
+</LinearLayout>

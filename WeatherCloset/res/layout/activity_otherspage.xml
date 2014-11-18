@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#909090" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dp"
+            android:gravity="center_vertical"
+            android:text="othersPage"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="20dp"
+        android:layout_weight="4" >
+
+        
+
+        <ImageView
+            android:id="@+id/myPicture"
+            android:layout_width="0px"
+            android:layout_height="80dp"
+            android:layout_weight="5"
+            android:src="@drawable/mypicture" />
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="10" >
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nickname"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/nickname"
+                android:layout_marginLeft="10dp"
+                android:text="24"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nickname"
+                android:text="male"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/age"
+                android:layout_toRightOf="@id/gender"
+                android:layout_marginLeft="10dp"
+                android:text="Seoul"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/editProfileBtn"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/gender"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Follow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/mypage_middle_background"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="3" >
+
+        <ImageView
+            android:id="@+id/myPhotoBtn"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/a"
+            android:src="@drawable/myphotobtn" />
+
+        <ImageView
+            android:id="@+id/followerBtn"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/a"
+            android:src="@drawable/followerbtn" />
+
+        <ImageView
+            android:id="@+id/likeArticleBtn"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/a"
+            android:src="@drawable/likearticlebtn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8" >
+    </LinearLayout>
+
+</LinearLayout>

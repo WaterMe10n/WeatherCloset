@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.weathercloset"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <!-- 1 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".StartPage" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".Notice" >
+        </activity>
+        <activity android:name=".Setting" >
+        </activity>
+        <activity
+            android:name=".OutputActivity"
+            android:label="@string/title_activity_output" >
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name=".Posting"
+            android:label="@string/title_activity_posting" >
+        </activity>
+        <activity
+            android:name=".Output1Activity"
+            android:label="@string/title_activity_output1" >
+        </activity>
+        <activity android:name=".MyPage" >
+        </activity>
+        <activity
+            android:name=".Error"
+            android:label="@string/title_activity_error" >
+        </activity>
+        <activity
+            android:name=".Timeline"
+            android:label="@string/title_activity_timeline" >
+        </activity>
+        <activity
+            android:name=".Timeline_List"
+            android:label="@string/title_activity_custom_list" >
+        </activity>
+    </application>
+
+</manifest>
