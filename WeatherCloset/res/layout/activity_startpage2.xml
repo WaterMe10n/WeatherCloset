@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/loginPW"
             android:layout_below="@+id/loginPW"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="15dp"
             android:text="login"
             android:textColor="#ffffff" >
         </Button>
@@ -80,27 +80,30 @@
             android:layout_height="wrap_content"
             android:layout_alignRight="@+id/loginPW"
             android:layout_below="@+id/loginPW"
+            android:layout_marginRight="15dp"
             android:text="signup"
             android:textColor="#ffffff" >
         </Button>
 
         <TextView
+            android:id="@+id/autologintext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/loginButton"
+            android:layout_centerHorizontal="true"
             android:layout_below="@+id/loginButton"
             android:layout_marginTop="10dp"
             android:text="Autologin"
             android:textColor="#ffffff"
-            android:textSize="14sp" />
+            android:textSize="15sp" />
 
         <CheckBox
             android:id="@+id/autologin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/signupButton"
+            android:layout_toRightOf="@+id/autologintext"
             android:layout_below="@+id/signupButton"
-            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
             android:background="#ffffff" >
         </CheckBox>
     </RelativeLayout>
